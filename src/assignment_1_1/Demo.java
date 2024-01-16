@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Demo {
 	
-	
 
 	public static void main(String[] args) {
 
@@ -19,7 +18,7 @@ public class Demo {
 		String currentUrl = driver.getCurrentUrl();
 		System.out.println("The Current URL : "+currentUrl);
 		
-		String expectedUrl = "https://www.google.com/"; // Replace with the expected URL
+		String expectedUrl = "https://www.google.com/"; 
 
 	        if (currentUrl.equals(expectedUrl)) {
 	            System.out.println("Obtained URL is correct.");
@@ -28,6 +27,7 @@ public class Demo {
 	        }
 		
 		driver.close();
+		driver.quit();
 	
 	}
 
